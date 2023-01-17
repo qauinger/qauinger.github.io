@@ -1,144 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quinn Auinger | Dev</title>
-    <style>
-        body {
-            background-color: rgb(30, 30, 30);
-            display: flex;
-            justify-content: center;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quinn Auinger</title>
+        <style>
+            @media(max-width: 1024px) {
+                body {
+                    padding-left: 0%;
+                    padding-right: 0%;
+                    margin: 5px;
+                }
+            }
 
-        #main {
-            width: 80%;
-            background-color: rgb(40, 40, 40);
-            border-radius: 25px;
-        }
-
-        #header {
-            display: flex;
-        }
-
-        #content {
-            margin: 5%;
-            margin-top: 0px;
-        }
-
-        #title {
-            color: white;
-            font: 72px monospace;
-            width: 75%;
-            display: flex;
-            text-align: center;
-            margin: 5%;
-            /* margin-right: 2%; */
-        }
-
-        #icon {
-            width: 20%;
-            margin: 5%;
-            border-radius: 50%;
-        }
-
-        p, h1, h2 {
-            color: white;
-            font-family: Courier;
-            font-size: 24px;
-        }
-
-        h2 {
-            font-size: 30px;
-        }
-
-        div.center ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        li p {
-            display: block;
-            color: rgb(155, 218, 252);
-            text-align: center;
-            padding: 0px 15px;
-        }
-
-        li {
-            float: left;
-        }
-
-        .center {
-            display: table;
-            margin: 0 auto;
-        }
-
-        .blue {
-            color: rgb(155, 218, 252);
-        }
-
-        .footer, .footer a {
-            color: rgb(100, 100, 100);
-            font-size: 16px;
-            text-decoration: none;
-        }
-
-        a {
-            color: rgb(204, 138, 74);
-        }
-    </style>
-</head>
+            @media(min-width: 1024px) {
+                body {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    margin: 20px;
+                }
+            }
+        </style>
+    </head>
     <body>
-        <div id="main">
+        <div id="container">
             <div id="header">
-                <h1 id="title">Hi, I'm Quinn.</h1>
+                <h1 id="title">Hello there.</h1>
+                <h2>There's not much here right now. It might look nicer in the future if I get around to it.</h2>
             </div>
-            <div id="content">
-                <p>I'm a beginner developer from New York, and I am committed to open source development and continous learning. My native language is Java.
-                <p>Most of my public projects can be found on my <a href="https://github.com/qauinger/" target="_blank">GitHub</a>.</p>
-                <hr noshade>
-                <h2>Projects</h2>
-                <p>
-                    <b class="blue">ir-data-compiler</b>
-                    <br>A GUI based compiler for Bruker OPUS<sup style="font-size:16px;">*</sup> spectroscopy data point table (.dpt) files.
-                    <br>
-                    <a href="https://github.com/qauinger/ir-data-compiler/" target="_blank">Source</a>
-                </p>
-                <p>
-                    <b class="blue">code-quest</b>
-                    <br>Lockheed Martin Code Quest<sup style="font-size:16px;">†</sup> 2022 Team Resources.
-                    <br>
-                    <a href="https://github.com/qauinger/code-quest/" target="_blank">Source</a><span> </span>
-                </p>
-                <p>
-                    <b class="blue">mountainstats</b>
-                    <br>A website tool for snowsport entusiasts to view mountain trail conditions.
-                    <br>
-                    🚧
-                    <a href="https://github.com/qauinger/mountainstats/" target="_blank">Source</a><span> </span>
-                    <a href="https://qauinger.com/mountainstats/" target="_blank">Visit</a>
-                </p>
-                <p>
-                    <b class="blue">learn</b>
-                    <br>Learning tools & games for elementary school.
-                    <br>
-                    🚧
-                    <a href="https://github.com/qauinger/learn/" target="_blank">Source</a><span> </span>
-                    <a href="https://qauinger.com/learn/" target="_blank">Visit</a>
-                </p>
-                <hr noshade>
-                <div class="center">
-                    <ul>
-                        <li><a href="https://github.com/qauinger/" target="_blank"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-qauinger-9bdafc?logo=github&style=for-the-badge"></a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="footer">🚧 These projects are works in progress.</p>
-                    <p class="footer"><a href="https://www.bruker.com/en.html" target="_blank"><sup>*</sup>Bruker OPUS is a software developed by Bruker Corporation.</a></p>
-                    <p class="footer"><a href="https://lmcodequestacademy.com/" target="_blank"><sup>†</sup>Lockheed Martin Code Quest is a production of Lockheed Martin Corportion.</a></p>
+            <div id="body">
+                <div id="main">
+                    <hr>
+                    <h2>Projects</h2>
+                    <p>
+                        <a href="https://github.com/qauinger/ir-data-compiler/" target="_blank"><b class="blue">ir-data-compiler</b></a>
+                        <br>A GUI based compiler for Bruker OPUS<sup style="font-size:16px;">^</sup> spectroscopy data point table (.dpt) files.
+                        <br><a href="https://www.bruker.com/en.html" target="_blank" style="text-decoration:none; color:black;"><sup>^</sup>Bruker OPUS is a software developed by Bruker Corporation.</a>
+                        <br>
+                    </p>
+                    <p>
+                        <a href="https://qauinger.com/mountainstats/" target="_blank"><b class="blue">mountainstats</b></a>
+                        <br>A web application for snowsport entusiasts to view mountain trail conditions.
+                        <br>
+                    </p>
+                    <hr>
+                    <h2>Contact</h2>
+                    <p>
+                        Feel free to contact me at <a href="mailto:quinn@qauinger.com"><b class="blue">quinn@qauinger.com</b></a>
+                    </p>
                 </div>
             </div>
         </div>
